@@ -92,16 +92,16 @@ xfce4-panel &
 ### 🔑 Set VNC password
 
 ```
-kali vnc passwd
+kex passwd 
 ```
 
 ### ▶️ Run VNC server
 
 ```
-kali vnc &
+kex
 ```
 
-* Address: `127.0.0.1:5901`
+* Address: `127.0.0.1:1:5901`
 * Username: **kali**
 * Password: *(your set password)*
 
