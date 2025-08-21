@@ -101,7 +101,7 @@ kex passwd
 kex
 ```
 
-* Address: `127.0.0.1:1:5901`
+* Address: `127.0.0.1:1 5901`
 * Username: **kali**
 * Password: *(your set password)*
 
