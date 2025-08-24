@@ -1,8 +1,7 @@
-# Kali-Linux-Installation-
-# 🐧 Kali Linux Installation on Android via [Termux](https://f-droid.org/en/packages/com.termux) (2025)
+# 🐧 Kali Linux on Android via [Termux](https://f-droid.org/en/packages/com.termux) (2025)
 
 ---
-
+# -▶️ [Domo setup Video](https://youtu.be/Wg6RLjKWaTc) 
 ## 📋 **Requirements**
 
 ✅ **15GB Storage**  
@@ -14,7 +13,7 @@
 ## ⚡ **Auto Full Install**
 
 ```
-pkg update && pkg install wget -y && clear && wget -O install-nethunter-termux https://offs.ec/2MceZWr && chmod +x install-nethunter-termux && bash install-nethunter-termux && kali
+pkg update && pkg install xfce4-panel x11-repo wget -y && clear && wget -O install-nethunter-termux https://offs.ec/2MceZWr && chmod +x install-nethunter-termux && bash install-nethunter-termux
 ````
 
 ---
@@ -33,10 +32,10 @@ termux-setup-storage
 apt update && apt upgrade -y
 ```
 
-### 3️⃣ Install wget
+### 3️⃣ Install All
 
 ```
-pkg install wget -y
+pkg install xfce4-panel x11-repo wget -y
 ```
 
 ### 4️⃣ Download Nethunter Installer
@@ -48,15 +47,8 @@ wget -O install-nethunter-termux https://offs.ec/2MceZWr
 ### 5️⃣ Make it executable
 
 ```
-chmod +x install-nethunter-termux
+chmod +x install-nethunter-termux && ./install-nethunter-termux
 ```
-
-### 6️⃣ Run the installer
-
-```
-./install-nethunter-termux
-```
-
 ---
 
 ## 🛠️ **Fix GUI Issues**
@@ -87,40 +79,18 @@ xfce4-panel &
 
 ---
 
-## 🖥️ **VNC Setup**
-
-### 🔑 Set VNC password
-
-```
-kex passwd 
-```
-
-### ▶️ Run VNC server
-
-```
-kex
-```
-
-* Address: `127.0.0.1:1 5901`
-* Username: **kali**
-* Password: *(your set password)*
-
-<img src="https://github.com/xiv3r/Kali-Linux-Termux/blob/main/kali_nethunter/vncsetup.png">
-
----
-
 ## 🔑 **Usage Commands**
 
 👤 Login as User:
 
 ```
-kali
+nethunter
 ```
 
 👑 Login as Root:
 
 ```
-kali -r
+nethunter -r
 ```
 
 🚪 Logout:
@@ -132,20 +102,18 @@ exit
 ❌ Kill VNC service:
 
 ```
-kali kill vnc
+nethunter kex stop
 ```
 
 🗑️ Uninstall:
 
 ```
-kali-uninstall
+rm -rf kali-arm64
 ```
 
 ---
 
 ## 📟 **Terminal Password**
-
-* Default password: **kali**
 
 <p align="center">
   <a href="https://store.nethunter.com/repo/com.offsec.nethunter.kex_11525001.apk">
